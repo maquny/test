@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Swiper demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="../img/favicon.ico" />
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="../css/swiper.css">
+	<link href="../css/common.css" rel="stylesheet">
+
+	<script src="../js/jquery-2.1.4.min.js"></script>
+
+
+
+</head>
+<body>
+	
+<style>
+.header{height:120px;position:relative;z-index:10;}
+.visual_box {
+background-image:url(../img/5BO_01.jpg);
+width:100%;
+background-size:cover;
+background-position:center center;
+position:fixed;top:0;left:0;z-index:1;
+}
+.contents{height: 2000px;
+    background-color: #fff;
+    z-index: 20;
+    position: relative;}
+
+</style>
+
+<div class="banner">
+	
+</div>
+
+	<div class="wrap">
+		
+		<div class="header">
+				header
+		</div>
+
+		<div class="visual_box">
+			
+		</div>
+
+		<div class="contents">
+		asdasd
+		</div>
+
+	</div>
+
+<script>
+
+$(document).ready(function(){
+
+})	
+
+$('.visual_box').css('height', window.innerHeight);
+$('.contents').css('margin-top', window.innerHeight);
+
+</script>
+
+</body>
+</html>

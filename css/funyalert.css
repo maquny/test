@@ -1,0 +1,56 @@
+@charset "utf-8";
+ul, li{list-style:none;}
+
+/* 기본적인 css 묶음 */
+.funy_layerpopup{display:none;position:absolute;left:0;top:0;right:0;bottom:0;z-index:1000;display:block}
+.funy_layerpopup.firstObj{z-index:1010;}
+.funy_layerpopup.border_line .ly_container{border:solid 1px #ddd;box-sizing:border-box;}
+.funy_layerpopup .ly_container{position:fixed;left:50%;z-index:1001;border-radius:5px;}
+.funy_layerpopup .ly_container .funy_title{text-align:center;min-height:24px;padding:37px 5%;}
+.funy_layerpopup .ly_container .alert_btn{width:100%;border-top:solid 1px #ebebeb;background-color:#287abf;border-radius:0 0 5px 5px;overflow:hidden}
+.funy_layerpopup .ly_container .alert_btn:after{content:'';display:block;clear:both}
+.funy_layerpopup .ly_container.not_btn .alert_btn{border:none;}
+.tab_content{padding:20px;display:none}
+.funy_layerpopup .ly_container.close .funy_title{text-align:left;}
+.funy_layerpopup .ly_container.close .funy_title h1{font-size:17px;font-weight:400;color:#202020;text-align:center;padding-bottom:20px;}
+.funy_layerpopup .ly_container.close .funy_title h2{font-size:16px;font-weight:700;color:#202020;}
+.funy_layerpopup .ly_container.close .funy_title li{padding-top:10px;padding-bottom:20px;color:#202020;line-height:20px;}
+.funy_layerpopup .ly_container.close .funy_title li span{display:block;padding-left:10px;}
+.funy_layerpopup .ly_container .alert_btn li:first-child{background-color:#fff;color:#707070;}
+.funy_layerpopup .ly_container .alert_btn li{text-align:center;font-size:16px;font-weight:500;height:45px;line-height:45px;color:#fff;background-color:#07328f;cursor:pointer;}
+.funy_layerpopup .ly_container .alert_btn li.all_in{background-color:#287abf;color:#fff;}
+.funy_layerpopup .ly_container .alert_btn.closeRight li:first-child{color:#fff;background-color:#07328f;}
+.funy_layerpopup .ly_container .alert_btn.closeRight li{background-color:#fff;color:#707070;}
+
+.funy_layerpopup .ly_bg{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.7);z-index:1000;overflow:hidden}
+
+.funy_layerpopup .ly_container .alert_btn.btn_length1 li{}
+.funy_layerpopup .ly_container .alert_btn.btn_length2 li{float:left;width:50%;}
+.funy_layerpopup .ly_container .alert_btn.btn_length3 li{float:left;width:33.3333%;}
+.funy_layerpopup .ly_container .alert_btn.btn_length3 li:first-child{width:33.3334%;}
+.funy_layerpopup .ly_container .alert_btn.btn_length3 li:first-child + li{background-color:#386bd8;color:#fff;}
+
+.funy_layerpopup .ly_header{height:50px;border-bottom:solid 1px #ddd;position:relative;background-color:#fff;border-radius:5px 5px 0 0;}
+.funy_layerpopup .ly_header h1{font-size:16px;font-weight:700;text-align:center;line-height:50px;}
+.funy_layerpopup .ly_header .close_btn{position:absolute;top:50%;right:20px;width:16px;margin-top:-8px;}
+.funy_layerpopup .ly_header .close_btn img{width:100%;}
+.funy_layerpopup .ly_header .close_btn.close{display:none;}
+.funy_layerpopup .ly_header.blue_color{background-color:#287abf;}
+.funy_layerpopup .ly_header.blue_color h1{color:#fff;}
+
+.funy_layerpopup .ly_close_box{position:absolute;top:5px;right:5px;width:36px;padding:10px;border:none;background-color:transparent;}
+.funy_layerpopup .ly_close_box img{width:100%;}
+.funy_layerpopup .ly_close_box.white{top:-37px;right:0;}
+
+.funy_layerpopup .ly_container .ly_content{padding:20px;color:#666;background-color:#fff;-webkit-overflow-scrolling:touch;}
+.funy_layerpopup .ly_container.not_header .ly_content{border-radius:5px 5px 0 0;}
+.funy_layerpopup .ly_container.not_btn .ly_content{border-radius:0 0 5px 5px;}
+.funy_layerpopup .ly_container.not_header.not_btn .ly_content{border-radius:5px;}
+.funy_layerpopup.html_type .ly_container .ly_content{padding:30px;}
+.funy_layerpopup .ly_container .ly_content.alertType{text-align:center;min-height:24px;padding:37px 5%;}
+.funy_layerpopup .ly_container .ly_content.alertType > p{line-height:20px;}
+.funy_layerpopup .ly_container .ly_content.alertType .content h1{font-size:18px;font-weight:700;}
+.funy_layerpopup .ly_container .ly_content.alertType .content h2{font-size:16px;}
+.funy_layerpopup .ly_container .ly_content.text_left{text-align:left;}
+.funy_layerpopup .ly_container .ly_content.text_center{text-align:center;}
+.funy_layerpopup .ly_container .ly_content.text_right{text-align:right;}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>오아이컬렉션_인트로</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="../img/favicon.ico" />
+	<link rel="stylesheet" href="../css/swiper.css">
+	<link href="../css/common.css" rel="stylesheet">
+	<script src="../js/jquery-2.1.4.min.js"></script>
+	<style>
+		body,html{position:relative;height:100%}
+		body{background:#eee;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;color:#000;margin:0;padding:0}
+		.swiper-container{width:100%;height:100%}
+		.swiper-slide{text-align:center;font-size:18px;background:#fff;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center;background-size:cover;background-position:center center}
+		.swiper-slide img{width:100%}
+		.swiper-container-v{background:#eee}
+		.d_logo{position:absolute;top:20px;left:20px;z-index:100;}
+		.oi_logo{width:300px;}
+		.byoioi_logo{width:250px;}
+		.oicollection_mini_logo{width:50px;position:absolute;left:-60px}
+		.byoioi_mini_logo{width:50px;position:absolute;left:40px}
+		.quick_menu{width:80px;background-color:#fff;position:fixed;top:0;right:0;z-index:110;bottom:0;transition:.5s}
+		.quick_menu_open{font-size:12px;position:absolute;top:20%;left:-65px;-webkit-transform:rotate(90deg);transform:rotate(90deg);-webkit-transition:all .3s;transition:all .3s;padding:10px;background-color:#fff;border-left:solid 1px #ccc;border-bottom:solid 1px #ccc;border-right:solid 1px #ccc;cursor:pointer;border-radius: 0 0 5px 5px;}
+		.quick_cont{padding:10px;}
+		.quick_cont img {width:100%;}
+		.quick_menu.open{right:-80px;}
+		#video_viewport video{position:absolute;top:0;left:0;}
+		.swiper-slide a img{transform: translate3d(600px, 0px, 0px);transition-duration:0ms;}
+		.swiper-slide.swiper-slide-active a img {transform: translate3d(0px, 0px, 0px);transition-duration:600ms;}
+	</style>
+</head>
+<body>
+	<div class="quick_menu open">
+		<div class="quick_menu_open">
+			QUICK MENU
+		</div>
+		<div class="quick_cont">
+			<img src="../img/quick_img.png">
+		</div>
+	</div>
+
+	<!-- Swiper -->
+	<div class="swiper-container oi_studio">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="swiper-container oioi_collection">
+					<div class="d_logo oi_logo"><img src="../img/oicollection_logo.png"></div>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" style="background-image:url(../img/oioi_05.png)">
+							
+							<a href="../oi_code/oioi_main.html"><img src="../img/oioi01_text.png"></a>
+
+						</div>
+						<div class="swiper-slide" style="background-image:url(../img/oioi_02.jpg)">
+							<a href="#"><img src="../img/oioi02_text.png" data-swiper-parallax="-300"></a>
+						</div>
+						<div class="swiper-slide" style="background-image:url(../img/oioi_03.jpg)">
+							
+							<div id="video_viewport">
+								<video autoplay muted loop>
+									<source src="../img/5252BYOiOi_20summer video_final2.mp4" type="video/mp4" />
+									<source src="../img/5252BYOiOi_20summer video_final2.webm" type="video/webm" />
+								</video>
+							</div>
+
+						</div>
+						<div class="swiper-slide" style="background-image:url(../img/oioi_04.jpg)"></div>
+					</div>
+					<div class="swiper-pagination oioi_collection_b"></div>
+				</div>
+
+			</div>
+			<div class="swiper-slide">
+
+				<div class="swiper-container byoioi">
+					<div class="d_logo byoioi_logo"><img src="../img/byoioi_logo.png"></div>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" style="background-image:url(../img/5BO_01.jpg)">
+							<a href="#"><img src="../img/5b0_01_text.png" data-swiper-parallax="-300"></a>
+						</div>
+						<div class="swiper-slide" style="background-image:url(../img/5BO_02.jpg)">
+							<a href="#"><img src="../img/5b0_02_text.png" data-swiper-parallax="-300" style="width:500px;position:absolute;right:10%;"></a>
+						</div>
+						<div class="swiper-slide" style="background-image:url(../img/5BO_03.jpg)">
+							<a href="#"><img src="../img/5b0_03_text.png" data-swiper-parallax="-300"></a>
+						</div>
+						<div class="swiper-slide" style="background-image:url(../img/5BO_04.jpg)"></div>
+					</div>
+					<div class="swiper-pagination byoioi_b"></div>
+				</div>
+
+			</div>
+			<!-- <div class="swiper-slide">
+				
+				<div class="swiper-container oistudio_event">
+					<div class="d_logo byoioi_logo"><img src="../img/oi_studio_logo.png"></div>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" style="background-image:url(../img/Oi_20RESORT_0919.jpg)">
+							<a href="#"><img src="../img/event01.png" style="width:45%"></a>
+						</div>
+						<div class="swiper-slide" style="background-image:url(../img/5BO_02.jpg)">
+							<a href="#"><img src="../img/5b0_02_text.png" data-swiper-parallax="-300" style="width:500px;position:absolute;right:10%;"></a>
+						</div>
+						<div class="swiper-slide" style="background-image:url(../img/5BO_03.jpg)">
+							<a href="#"><img src="../img/5b0_03_text.png" data-swiper-parallax="-300"></a>
+						</div>
+						<div class="swiper-slide" style="background-image:url(../img/5BO_04.jpg)"></div>
+					</div>
+					<div class="swiper-pagination oistudio_event_b"></div>
+				</div>
+
+			</div> -->
+		</div>
+		<div class="swiper-button-next"><img src="../img/byoioi_logo_mini.png" class="byoioi_mini_logo "></div>
+		<div class="swiper-button-prev"><img src="../img/oicollection_minilogo.png" class="oicollection_mini_logo"></div>
+	</div>
+
+	<!-- Swiper JS -->
+	<script src="../js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var oiStudio = new Swiper('.oi_studio', {
+			pagination: {
+				el: '.oi_studio_b',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			keyboard: {
+				enabled: true,
+				onlyInViewport: false,
+			},
+		});
+
+		var oioiCollection = new Swiper('.oioi_collection', {
+			direction: 'vertical',
+			pagination: {
+				el: '.oioi_collection_b',
+				clickable: true,
+			},
+			keyboard: {
+				enabled: true,
+				onlyInViewport: true,
+			},
+			speed: 1000,
+			mousewheel: {
+				invert: false,
+			},
+		});
+
+		var byOioi = new Swiper('.byoioi', {
+			direction: 'vertical',
+			pagination: {
+				el: '.byoioi_b',
+				clickable: true,
+			},
+			keyboard: {
+				enabled: true,
+				onlyInViewport: true,
+			},
+			speed: 1000,
+			mousewheel: {
+				invert: false,
+			},
+		});
+
+		var byOioi = new Swiper('.oistudio_event', {
+			direction: 'vertical',
+			pagination: {
+				el: '.oistudio_event_b',
+				clickable: true,
+			},
+			//mousewheel: true,
+		});
+
+
+		var min_w = 300;
+		var vid_w_orig;
+		var vid_h_orig;
+
+		function fitVideo() {
+			$('#video_viewport').width(window.innerWidth);
+			$('#video_viewport').height(window.innerHeight);
+			$('video').width(window.innerWidth);
+		};
+
+		$(document).ready(function(){
+			$('.quick_menu_open').click(function(){
+				if($(this).parent().hasClass('open')){
+					$(this).parent().removeClass('open')
+				} else {
+					$(this).parent().addClass('open')
+				}
+			});
+
+			vid_w_orig = parseInt($('video').attr('width'));
+			vid_h_orig = parseInt($('video').attr('height'));
+			$(window).resize(function () { fitVideo(); });
+			$(window).trigger('resize');
+		})
+
+
+	</script>
+</body>
+</html>

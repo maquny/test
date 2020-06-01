@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>5252byoioi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="../img/byoioi_favicon.ico" />
+
+	<link rel="stylesheet" href="../css/swiper.css">
+	<link href="../css/common.css" rel="stylesheet">
+	<script src="../js/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+
+<div class="tti_banner"> 
+	2020 5252 BY O!Oi  X MARK GONZALES OPEN
+</div>
+
+<style>
+#wrap{}
+#wrap:after{content:'';display:block;clear:both;}
+.tti_banner{width:100%;position:fixed;height:36px;line-height:36px;background-color:#f08435;text-align:center;color:#fff;}
+
+.logo{float:left;width:370px;padding:32px 0 32px 42px}
+.logo img{width:100%}.header{width:100%;position:fixed;top:0;left:0;z-index:10}
+.header_sub_menu{float:right;padding:45px 30px}
+.header_sub_menu div{float:left;font-size:14px;color:#fff;padding:0 15px}
+.cart_box span{color:red}
+.main_visual{width:100%;background-image:url(../img/5BO_01.jpg);background-size:cover;background-position:center center;position:fixed;top:0;left:0;position:relative;}
+.container{float:left;z-index:9;background-color:#fff}
+.list_box .title{text-align:center;padding:50px 0 80px 0}
+.list_box .title h4{margin-top:15px}
+.list_box .title button{width:280px;height:24px;margin-top:15px;background-color:#000;color:#fff;text-align:center}
+
+#wrap.ttibanner .header,
+#wrap.ttibanner .main_visual{top:36px;}
+.logo{float:left;width:370px;padding:32px 0 32px 42px}
+.logo img{width:100%}.header{width:100%;position:fixed;top:0;left:0;z-index:10}
+.header_sub_menu{float:right;padding:45px 30px}
+.header_sub_menu div{float:left;font-size:14px;color:#fff;padding:0 15px}
+.cart_box span{color:red}
+.main_visual{width:100%;background-image:url(../img/5BO_01.jpg);background-size:cover;background-position:center center;position:fixed;top:0;left:0}
+.container{position:relative;z-index:9;background-color:#fff}
+.list_box:after{content:'';display:block;clear:both;}
+.list_box .title{text-align:center;padding:50px 0 80px 0}
+.list_box .title h4{margin-top:15px}
+.list_box .title button{width:280px;height:24px;margin-top:15px;background-color:#000;color:#fff;text-align:center}
+.list_cont{width:100%;}
+.list_cont ul{}
+.list_cont li{float:left;width:25%;box-sizing:border-box;}
+.list_cont li .list_img{}
+.list_cont li .list_img img{width:100%;}
+.list_cont li .list_name{height:131px;text-align:center}
+.list_cont li .list_name h3{margin-top:23px;}
+.list_cont li{padding:0 2px;}
+.center_banner{}
+.center_banner:after{content:'';display:block;clear:both;}
+.center_banner .list{float:left;width:50%;box-sizing:border-box;position:relative;}
+.center_banner .list img {float:left;width:100%;}
+.center_banner .list:first-child{padding-right:2px;}
+.center_banner .list:first-child + .list{padding-left:2px;}
+
+.center_banner .list .center_banner_name{position:absolute;top:0;left:0;right:0;bottom:0;display:none;}
+.center_banner .list:hover{}
+
+.center_banner .list:hover .center_banner_name{display:block;background-color:rgb(0,0,0,.3);}
+.center_banner_name .text{width:100%;position:absolute;top:50%;margin-top:-14px;color:#fff;text-align:center;font-size:24px;line-height:28px;text-align:center;}
+
+.category_menu_icon{position:absolute;bottom:41px;left:25px;z-index:20;padding:10px;}
+.category_menu_icon img{width:16px;}
+.category_menu{display:none;}
+.category_menu_icon.open +.category_menu{display:block}
+.category_menu .list{position:absolute;top:0;left:0;width:455px;height:100%;background-color:rgb(255,255,255, .3);}
+.category_menu .list .ul_box{padding:131px 62px 0 62px;}
+.category_menu .list li{font-size:16px;color:#fff;line-height:60px;padding-left:10px;}
+.category_menu .list li a{font-size:16px;color:#fff;line-height:60px;display:inline-block;width:100%;}
+.category_menu .list .ul_box ul li{padding-left:20px;;border-top:solid 1px #fff;}
+.category_menu .list .ul_box ul li a{padding-left:0;position:relative;}
+.category_menu .list .ul_box ul li a:after{content:'';display:block;width:2px;height:10px;background-color:#fff;position:absolute;top:50%;right:10px;margin-top:-5px;}
+.category_menu .list .ul_box ul li a:before{content:'';display:block;width:10px;height:2px;background-color:#fff;position:absolute;top:50%;right:6px;margin-top:-1px;}
+
+.category_menu .list .ul_box ul ul li{padding-left:10px;border-top:solid 1px #fff;}
+
+.category_menu .list .ul_box ul ul li:last-child{margin-bottom:10px;}
+
+.category_menu .list li a + ul{display:none;}
+.category_menu .list li a.open + ul{display:block;}
+
+
+ a:link { color: red; text-decoration: none;}
+ a:visited { color: black; text-decoration: none;}
+ a:hover { color: blue; text-decoration: underline;}
+
+.footer{float:left;width:100%;padding:65px 55px;background-color:#fff;position:relative;box-sizing:border-box;background-color:#f8f8f8;}
+
+.infor_box dl{float:left;width:25%;}
+.infor_box dl dt{margin-bottom:19px;}
+.infor_box dl dd{font-size:16px;line-height:20px;color:#444;}
+
+.infor_box,
+.address{float:left;width:50%;box-sizing:border-box;}
+
+.address dl{}
+.address dl dt{margin-bottom:19px;}
+.address dl dd{font-size:16px;line-height:20px;color:#444;}
+.hidden_tag{float:left;background-color:#fff;}
+
+</style>
+
+<div id="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="#"><img src="../img/byoioi_logo.png" alt="5252byoioi 로고"></a>
+		</div>
+
+		<div class="header_sub_menu">
+			<div>검색</div>
+			<div>로그인</div>
+			<div>마이페이지</div>
+			<div>KR</div>
+			<div class="cart_box">
+				<img src="../img/cart_icon.png" alt="카트 아이콘">
+				<span>(0)</span>
+			</div>
+			<div><img src="../img/home_icon.png" alt="홈 아이콘"></div>
+		</div>
+	</div>
+
+	<div class="main_visual">
+		
+		<div class="category_menu_icon"><img src="../img/menu_icon.png" alt="menu 아이콘"></div>
+		<div class="category_menu">
+			<div class="list">
+				<ul class="ul_box">
+					<li>
+						<a href="#">SHOP</a>
+						<ul>
+							<li>신상품</li>
+							<li><a href="#">아우터</a>
+								<ul>
+									<li>신상품</li>
+									<li>아우터</li>
+									<li>티셔츠</li>
+									<li>신발</li>
+								</ul>
+							</li>
+							<li>티셔츠</li>
+							<li>신발</li>
+						</ul>
+					</li>
+					<li>COLLABORATION</li>
+					<li>LOOKBOOK</li>
+					<li>PRESS</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		
+		<div class="list_box">
+			
+			<div class="title">
+				<h1>베스트 상품</h1>
+				<h4>5.B.O에서 지금 가장 사랑 받는 BEST 아이템</h4>
+				<button>더보기 +</button>
+			</div>
+
+
+			<div class="list_cont">
+				<ul>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="center_banner">
+			<div class="list">
+				<div class="center_banner_name">
+					<div class="text">5252 BY O!Oi X MARK GONZALES</div>
+				</div>
+				<img src="../img/center_banner01.png" alt="큰 배너">
+			</div>
+			<div class="list">
+				<div class="center_banner_name">
+					<div class="text">5252 BY O!Oi X MARK GONZALES</div>
+				</div>
+				<img src="../img/center_banner01.png" alt="큰 배너">
+			</div>
+		</div>
+
+		<div class="list_box">
+			
+			<div class="title">
+				<h1>베스트 상품</h1>
+				<h4>5.B.O에서 지금 가장 사랑 받는 BEST 아이템</h4>
+				<button>더보기 +</button>
+			</div>
+
+
+			<div class="list_cont">
+				<ul>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+					<li>
+						<div class="list_img">
+							<img src="../img/byoioi_list_imgo01.png" alt="리스트 이미지">
+						</div>
+						<div class="list_name">
+							<h3>2020 SIGNATURE T-SHIRTS [black]</h3>
+							<h3>₩39,000</h3>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="infor_box">
+			<dl>
+				<dt>Information</dt>
+				<dd>About</dd>
+				<dd>매장안내</dd>
+				<dd>이용약관</dd>
+				<dd>개인정보취급방침</dd>
+			</dl>
+			<dl>
+				<dt>Coustomer Service</dt>
+				<dd>문의</dd>
+				<dd>배송</dd>
+				<dd>교환 및 반품</dd>
+				<dd>주문조회</dd>
+			</dl>
+			<dl>
+				<dt>Soical</dt>
+				<dd>About</dd>
+				<dd>매장안내</dd>
+				<dd>이용약관</dd>
+				<dd>개인정보취급방침</dd>
+			</dl>
+			<dl>
+				<dt>1600-6352</dt>
+				<dd>문의</dd>
+				<dd>배송</dd>
+				<dd>교환 및 반품</dd>
+				<dd>주문조회</dd>
+			</dl>
+			</dl>
+		</div>
+
+		<div class="address">
+			<dl>
+				<dt>(주) 오아이스튜디오</dt>
+				<dd>서울특별시 성동구 광진구로 130, 401 [401, 130, Gwangnaru-ro, Seongdong-gu, Seoul, Korea]</dd>
+				<dd>CEO : 정예슬 [Yeseul, Jung]  BUSINESS LISENCE:191-81-00440 MAIL-ORDER BUSINESS:16-Seoul Geumcheon-0915</dd>
+				<dd><br/>Copyright All rights reserved. by 5252byo!oi   Hosting By CAFE24</dd>
+			</dl>
+		</div>
+	</div>
+
+</div>
+
+<script>
+
+$(document).ready(function(){
+	if($('.tti_banner').length > 0){
+			console.log(111)
+			$('#wrap').addClass('ttibanner')
+		} else {
+			console.log(222)
+		}
+
+
+		$(".ul_box li a").mouseenter(function(){
+			$(this).addClass('open')
+		});
+
+		$(".ul_box li a").mouseleave(function(){
+			//$(this).removeClass('open')
+		});
+
+		$('.category_menu_icon').click(function(){
+
+			if($(this).hasClass('open')){
+				console.log(333)
+				$(this).removeClass('open')
+			} else {
+				console.log(444)
+				$(this).addClass('open')
+			}
+
+		})
+
+})	
+
+$('.main_visual').css('height', window.innerHeight)
+$('.container').css('margin-top', window.innerHeight)
+</script>
+
+</body>
+
+</html>
